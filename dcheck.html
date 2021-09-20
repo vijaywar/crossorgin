@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>D check</h1>
+    <a href="./check.html">Click to go to next page</a>
+    <script>
+        console.log(document.location.href)
+        console.log(document.referrer)
+        console.log(location.href)
+        console.log(window.location.protocol)
+        var t=20;
+        var i=20;
+        var r=20;
+        var f = 20
+          , h = "orf "
+          , o =20
+          , c = r && !isNaN(r) ? r : ""
+          , l ="All good"
+          , a = document.referrer
+          , v = document.location.href
+          , y ="this is y"
+          , p =0
+          , w = "Landing page id"
+          , b = 50;
+        // if (f == "" || o == "")
+        //     return;
+        e = "event-tracking-script";
+        s = window.location.protocol + "//" + b + "/t/WebEventTracker.aspx?p1=" + f + "&p2=" + h + "&p3=" + o + "&p4=" + c + "&p5=" + l + "&p6=" + a + "&p7=" + v + "&p8=" + y + "&p9=" + p + "&p10=" + w;
+       console.log(s)
+
+
+        function getHost(n) {
+    var t = "";
+    try {
+        // if (LSQ.Parser.parseInt(n) == "")
+        //     throw "OrgCode is required for tracking";
+        if (t = window.leadsquared.tracker.hosts[n],
+        typeof t == "undefined" || t == null || t.trim() == "") {
+            var i = window.leadsquared.tracker.getTrackingScripts()
+              , r = window.leadsquared.tracker.getOrgTrackingScripts(i, n)
+              , t = r.length > 0 ? window.leadsquared.tracker.getHostFromScript(r[0]) : window.leadsquared.tracker.getHostFromScript(i[0]);
+            window.leadsquared.tracker.hosts[n] = t
+        }
+    } catch (u) {
+        window.console.log(u);
+        t = window.leadsquared.tracker.defaultHost
+    }
+    return t
+}
+    </script>
+</body>
+</html>
